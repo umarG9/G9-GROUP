@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ha">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>G9-GROUP | SHEIKH HADI GWANI GENERAL ENT. | CAC 7756422</title>
+<meta name="description" content="G9-GROUP Super App - 9 Apps in 1 - CAC 7756422 - Kano">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#06000f;color:#fff;font-family:Inter,system-ui;padding-bottom:90px}
+.header{position:sticky;top:0;z-index:20;background:linear-gradient(135deg,#1a0033,#4b0082);padding:14px;border-bottom:1px solid rgba(255,255,255,.15);display:flex;justify-content:space-between;align-items:center;backdrop-filter:blur(20px)}
+.logo{font-weight:900;font-size:20px} .logo span{background:linear-gradient(90deg,#ff3bff,#ffeb3b);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.balBox{background:rgba(0,0,0,.45);padding:8px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.1);text-align:right}
+.bal{color:#00ff88;font-weight:900;font-size:15px}
+.cacBar{background:linear-gradient(90deg,#0a3d00,#00a651);padding:6px;text-align:center;font-size:9px;font-weight:800;letter-spacing:1px;border-bottom:1px solid rgba(255,255,255,.1)}
+.content{padding:12px}
+.card{background:linear-gradient(135deg,rgba(60,0,110,.6),rgba(20,0,45,.95));border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:16px;margin-bottom:12px}
+.grid9{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0}
+.appBtn{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:14px 4px;text-align:center;cursor:pointer}
+.appBtn.active{background:linear-gradient(135deg,#ff006a,#7c00ff);border-color:#ff3bff}
+.appBtn div{font-size:22px} .appBtn p{font-size:9px;margin-top:5px;font-weight:700}
+.page{display:none}.page.active{display:block}
+input,select{width:100%;padding:12px;background:rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.15);border-radius:11px;color:#fff;margin-top:8px;outline:none}
+.btn{width:100%;padding:12px;background:linear-gradient(135deg,#ff006a,#7c00ff);border:none;border-radius:11px;color:#fff;font-weight:900;margin-top:10px;cursor:pointer}
+.btn:disabled{opacity:.5}
+.small{font-size:10px;opacity:.6;margin-top:4px}
+.charge{background:rgba(255,235,59,.15);border:1px solid rgba(255,235,59,.4);border-radius:10px;padding:8px;margin-top:8px;font-size:11px;display:flex;justify-content:space-between}
+.bottomNav{position:fixed;bottom:0;left:0;right:0;background:rgba(10,0,25,.98);backdrop-filter:blur(20px);border-top:1px solid rgba(255,255,255,.15);display:flex;justify-content:space-around;padding:8px 0;z-index:30}
+.navItem{flex:1;text-align:center;cursor:pointer;opacity:.5} .navItem.active{opacity:1;color:#ff3bff} .navItem div{font-size:18px} .navItem p{font-size:8px;font-weight:700;margin-top:2px}
+.history{background:rgba(0,0,0,.4);border-radius:10px;padding:8px;margin-top:8px;font-size:10px;max-height:180px;overflow:auto}
+.footer{text-align:center;padding:15px;font-size:9px;opacity:.5;line-height:1.6}
+</style>
+</head>
+<body>
+
+<div class="cacBar">✅ CAC REGISTERED: SHEIKH HADI GWANI GENERAL ENTERPRISES | BN: 7756422 | KANO | CAMA 2020</div>
+
+<div class="header">
+<div class="logo">G9-<span>GROUP</span><div style="font-size:8px;opacity:.6;letter-spacing:2px">SHEIKH HADI GWANI ENT.</div></div>
+<div class="balBox"><div style="font-size:7px;opacity:.6">WALLET BALANCE</div><div class="bal" id="bal">₦0</div><div style="font-size:7px" id="uName">Loading...</div></div>
+</div>
+
+<div class="content">
+
+<!-- HOME -->
+<div id="home" class="page active">
+<div class="card" style="text-align:center">
+<h3 style="font-size:14px">Barka da zuwa G9-GROUP! 👋</h3>
+<p style="font-size:10px;opacity:.7;margin-top:4px">9 Apps Waje Daya - Duk a nan!</p>
+<div style="margin-top:10px;display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:9px">
+<div style="background:rgba(0,0,0,.3);padding:8px;border-radius:10px">🏢 CAC: 7756422<br>Yakasai Rimi Market</div>
+<div style="background:rgba(0,0,0,.3);padding:8px;border-radius:10px">💜 PalmPay<br>09026133849</div>
+</div>
+</div>
+<div class="grid9">
+<div class="appBtn active" onclick="goPage('pay')"><div>💸</div><p>G9-PAY</p></div>
+<div class="appBtn" onclick="goPage('airtime')"><div>📱</div><p>AIRTIME</p></div>
+<div class="appBtn" onclick="goPage('shop')"><div>🛒</div><p>SHOP</p></div>
+<div class="appBtn" onclick="goPage('learn')"><div>📚</div><p>LEARN</p></div>
+<div class="appBtn" onclick="goPage('wallet')"><div>👛</div><p>WALLET</p></div>
+<div class="appBtn" onclick="goPage('verify')"><div>🔐</div><p>VERIFY</p></div>
+<div class="appBtn" onclick="goPage('chat')"><div>💬</div><p>CHAT</p></div>
+<div class="appBtn" onclick="goPage('track')"><div>📦</div><p>TRACK</p></div>
+<div class="appBtn" onclick="goPage('admin')"><div>👑</div><p>ADMIN</p></div>
+</div>
+<div class="card"><h3 style="font-size:11px">📊 Tarihi / History</h3><div id="hist" class="history">Babu komai...</div></div>
+</div>
+
+<!-- DATA PAY -->
+<div id="pay" class="page">
+<div class="card">
+<h3>💸 G9-PAY - DATA</h3>
+<select id="netData"><option value="1">MTN</option><option value="2">GLO</option><option value="3">AIRTEL</option><option value="4">9MOBILE</option></select>
+<select id="planData"><option value="1">1GB - ₦280 (30 Days)</option><option value="2">2GB - ₦550</option><option value="3">3GB - ₦800</option><option value="5">5GB - ₦1300</option></select>
+<input id="numData" type="number" placeholder="Lambar: 080...">
+<div class="charge"><span>Farashi:</span><span id="priceData">₦280</span></div>
+<div class="charge" style="background:rgba(0,255,136,.1)"><span>Charges:</span><span>₦5</span></div>
+<div class="charge" style="background:rgba(255,59,255,.15);font-weight:900"><span>Total:</span><span id="totalData">₦285</span></div>
+<button class="btn" id="btnData" onclick="buyData()">Biya ₦285 - Tura Data</button>
+<div class="small">Powered by blessdata.com.ng/api/data/ + CAC 7756422</div>
+</div>
+</div>
+
+<!-- AIRTIME -->
+<div id="airtime" class="page">
+<div class="card">
+<h3>📱 G9-AIRTIME</h3>
+<select id="netAir"><option value="1">MTN</option><option value="2">GLO</option><option value="3">AIRTEL</option><option value="4">9MOBILE</option></select>
+<input id="amtAir" type="number" placeholder="Nawa? Misali: 500">
+<input id="numAir" type="number" placeholder="Lambar: 080...">
+<div class="charge"><span>Amount:</span><span id="priceAir">₦0</span></div>
+<div class="charge"><span>Charges:</span><span>₦5</span></div>
+<div class="charge" style="background:rgba(255,59,255,.15);font-weight:900"><span>Total:</span><span id="totalAir">₦5</span></div>
+<button class="btn" onclick="buyAirtime()">Tura Airtime</button>
+<div class="small">API: blessdata.com.ng/api/airtime/ + ₦5 charges</div>
+</div>
+</div>
+
+<!-- WALLET -->
+<div id="wallet" class="page">
+<div class="card" style="border-color:#00ff88">
+<h3>👛 WALLET - SHEIKH HADI GWANI ENT.</h3>
+<p style="font-size:10px">PalmPay: 09026133849<br>CAC: 7756422</p>
+<input id="depAmt" type="number" placeholder="Deposit Amount Min ₦100">
+<button class="btn" style="background:linear-gradient(135deg,#00c853,#009624)" onclick="deposit()">+ Deposit</button>
+<div style="margin-top:10px;padding:10px;background:rgba(0,0,0,.4);border-radius:10px;font-size:10px">
+💡 Charges: Duk transaction ₦5 ne kacal!<br>
+Wannan shine riba ta G9-GROUP.
+</div>
+</div>
+</div>
+
+<!-- OTHER -->
+<div id="shop" class="page"><div class="card"><h3>🛒 G9-SHOP</h3><p class="small">Yakasai Rimi Market, Kano - No 1 Hadi Gwani Street</p><input placeholder="Me kake nema?"><button class="btn" onclick="addLog('SHOP: Order')">Saya +₦5 Charges</button></div></div>
+<div id="learn" class="page"><div class="card"><h3>📚 G9-LEARN</h3><p class="small">Tafsir - Sheikh Hadi Gwani</p><button class="btn" onclick="addLog('LEARN: Played')">▶️ Saurara</button></div></div>
+<div id="verify" class="page"><div class="card"><h3>🔐 VERIFY - CAC 7756422</h3><input id="idN" placeholder="NIN/BVN 11 digits"><button class="btn" onclick="verify()">Verify</button><div id="vOk" style="display:none;text-align:center;color:#00ff88;font-weight:900;margin-top:8px">✅ VERIFIED BY CAC 7756422</div></div></div>
+<div id="chat" class="page"><div class="card"><h3>💬 CHAT</h3><input id="cM" placeholder="Sako..."><button class="btn" onclick="chat()">Aika</button><div id="cBox" class="history"></div></div></div>
+<div id="track" class="page"><div class="card"><h3>📦 TRACK</h3><input placeholder="G9-7756422-123"><button class="btn" onclick="addLog('TRACK')">Track</button></div></div>
+<div id="admin" class="page"><div class="card" style="border-color:#ffeb3b"><h3>👑 ADMIN - SHEIKH HADI GWANI</h3><div style="font-size:10px;line-height:1.7">Business: SHEIKH HADI GWANI GENERAL ENTERPRISES<br>BN: 7756422<br>Address: No 1 Hadi Gwani St, Yakasai Rimi Market, Kano<br>Date: 26 July 2024<br>PalmPay: 09026133849<br>Charges: ₦5 per transaction</div><div class="history" id="aLog" style="margin-top:10px"></div></div></div>
+
+</div>
+
+<div class="bottomNav">
+<div class="navItem active" onclick="goPage('home')"><div>🏠</div><p>HOME</p></div>
+<div class="navItem" onclick="goPage('pay')"><div>💸</div><p>DATA</p></div>
+<div class="navItem" onclick="goPage('airtime')"><div>📱</div><p>AIRTIME</p></div>
+<div class="navItem" onclick="goPage('wallet')"><div>👛</div><p>WALLET</p></div>
+<div class="navItem" onclick="goPage('admin')"><div>👑</div><p>ADMIN</p></div>
+</div>
+
+<div class="footer">SHEIKH HADI GWANI GENERAL ENTERPRISES • BN: 7756422 • GENERAL TRADING & MERCHANDISE<br>No 1 Hadi Gwani Street, Yakasai B Rimi Market, Kano State • Registered 26th July 2024 • CAMA 2020<br>G9-GROUP Super App © 2026 - All Rights Reserved - Charges ₦5</div>
+
+<script>
+// ===== CONFIG =====
+const BLESS = {
+  dataUrl: "https://blessdata.com.ng/api/data/",
+  airtimeUrl: "https://blessdata.com.ng/api/airtime/",
+  key: "SAKA_API_KEY_DINKA_ANAN" // <-- SAKA KEY DIN BLESSDATA ANAN!
+};
+const CHARGES = 5;
+let bal = parseFloat(localStorage.getItem('g9_bal')||'0');
+let name = localStorage.getItem('g9_name')||prompt('Sunanka?')||'Guest';
+if(!localStorage.getItem('g9_name')) localStorage.setItem('g9_name', name);
+let logs = JSON.parse(localStorage.getItem('g9_logs')||'[]');
+
+document.getElementById('uName').innerText = name + ' • CAC 7756422 ✅';
+document.getElementById('bal').innerText = '₦'+bal.toLocaleString();
+renderLogs();
+
+// UPDATE TOTALS
+document.getElementById('planData').addEventListener('change', e=>{
+  let p = e.target.value=='1'?280:e.target.value=='2'?550:e.target.value=='3'?800:1300;
+  document.getElementById('priceData').innerText='₦'+p;
+  document.getElementById('totalData').innerText='₦'+(p+CHARGES);
+  document.getElementById('btnData').innerText='Biya ₦'+(p+CHARGES)+' - Tura Data';
+});
+document.getElementById('amtAir').addEventListener('input', e=>{
+  let a = parseFloat(e.target.value)||0;
+  document.getElementById('priceAir').innerText='₦'+a;
+  document.getElementById('totalAir').innerText='₦'+(a+CHARGES);
+});
+
+function renderLogs(){let h=document.getElementById('hist');if(logs.length)h.innerHTML=logs.map(l=>'<div>• '+l+'</div>').join(''); let a=document.getElementById('aLog');if(a)a.innerHTML='Balance: ₦'+bal+'<br>Charges: ₦5/txn<br>Revenue from charges: ₦'+(logs.length*5)+'<br><br>'+logs.join('<br>')}
+function addLog(t){logs.unshift(new Date().toLocaleTimeString()+' - '+t+' (+₦5)');localStorage.setItem('g9_logs',JSON.stringify(logs));renderLogs()}
+function goPage(p){document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));document.getElementById(p).classList.add('active');document.querySelectorAll('.navItem').forEach(x=>x.classList.remove('active'))}
+
+// WALLET
+function deposit(){let a=parseFloat(document.getElementById('depAmt').value);if(!a||a<100)return alert('Min ₦100');bal+=a;localStorage.setItem('g9_bal',bal);document.getElementById('bal').innerText='₦'+bal.toLocaleString();addLog('DEPOSIT +₦'+a);alert('✅ +₦'+a+' - PalmPay 09026133849');renderLogs()}
+
+// DATA
+async function buyData(){
+  let phone=document.getElementById('numData').value;
+  let net=parseInt(document.getElementById('netData').value);
+  let plan=parseInt(document.getElementById('planData').value);
+  let price = plan==1?280:plan==2?550:plan==3?800:1300;
+  let total = price + CHARGES;
+  if(!phone||phone.length<11)return alert('Lamba ba daidai ba!');
+  if(bal < total)return alert('Balance bai isa ba! Kuna da ₦'+bal+' Amma kuna bukata ₦'+total);
+  
+  let btn=document.getElementById('btnData');btn.disabled=true;btn.innerText='⏳ Ana turawa...';
+  
+  try{
+    // Idan baka da API KEY tukuna - yayi demo
+    if(BLESS.key.includes('SAKA')){
+      await new Promise(r=>setTimeout(r,1500));
+      bal-=total;localStorage.setItem('g9_bal',bal);document.getElementById('bal').innerText='₦'+bal.toLocaleString();
+      addLog('DATA (DEMO): '+phone+' ₦'+price+' +₦5 charges = ₦'+total);
+      alert('✅ DEMO: An tura Data! Saka API KEY don LIVE! Total cire: ₦'+total+' (Riba ₦5)');
+    } else {
+      let res=await fetch(BLESS.dataUrl,{method:"POST",headers:{"Content-Type":"application/json","Authorization":"Bearer "+BLESS.key},body:JSON.stringify({network:net,plan:plan,mobile_number:phone,Ported_number:true})});
+      let j=await res.json();
+      if(j.status=="success"||j.Status=="successful"||j.success){
+        bal-=total;localStorage.setItem('g9_bal',bal);document.getElementById('bal').innerText='₦'+bal.toLocaleString();
+        addLog('DATA LIVE: '+phone+' ₦'+total);alert('✅ An tura Data LIVE! ₦'+total);
+      } else alert('❌ '+ (j.message||'Error'));
+    }
+  }catch(e){alert('❌ '+e)} 
+  btn.disabled=false;btn.innerText='Biya ₦'+(price+CHARGES)+' - Tura Data';renderLogs();
+}
+
+// AIRTIME
+async function buyAirtime(){
+  let phone=document.getElementById('numAir').value;
+  let net=parseInt(document.getElementById('netAir').value);
+  let amt=parseFloat(document.getElementById('amtAir').value);
+  if(!phone||phone.length<11)return alert('Lamba!');if(!amt||amt<50)return alert('Min ₦50');
+  let total=amt+CHARGES;
+  if(bal<total)return alert('Balance bai isa ba! Need ₦'+total);
+  event.target.disabled=true;event.target.innerText='⏳...';
+  try{
+    if(BLESS.key.includes('SAKA')){
+      await new Promise(r=>setTimeout(r,1200));
+      bal-=total;localStorage.setItem('g9_bal',bal);document.getElementById('bal').innerText='₦'+bal.toLocaleString();
+      addLog('AIRTIME DEMO: '+phone+' ₦'+amt+' +₦5 = ₦'+total);alert('✅ DEMO Airtime ₦'+amt+' - Cire ₦'+total);
+    } else {
+      let res=await fetch(BLESS.airtimeUrl,{method:"POST",headers:{"Content-Type":"application/json","Authorization":"Bearer "+BLESS.key},body:JSON.stringify({network:net,amount:amt,mobile_number:phone,Ported_number:true,airtime_type:"VTU"})});
+      let j=await res.json();
+      if(j.status=="success"||j.Status=="successful"||j.success){bal-=total;localStorage.setItem('g9_bal',bal);document.getElementById('bal').innerText='₦'+bal.toLocaleString();addLog('AIRTIME LIVE: '+phone+' ₦'+total);alert('✅ LIVE Airtime!');}else alert('❌ '+j.message);
+    }
+  }catch(e){alert(e)} 
+  event.target.disabled=false;event.target.innerText='Tura Airtime';renderLogs();
+}
+
+function verify(){let n=document.getElementById('idN').value;if(n.length!=11)return alert('11 digits');document.getElementById('vOk').style.display='block';addLog('VERIFY: '+n)}
+function chat(){let m=document.getElementById('cM').value;if(!m)return;document.getElementById('cBox').innerHTML='<div><b>'+name+':</b> '+m+'</div>'+document.getElementById('cBox').innerHTML;addLog('CHAT: '+m);document.getElementById('cM').value=''}
+</script>
+</body>
+                                                                                                                  </html>
